@@ -102,3 +102,67 @@ function sendEmail(){
     message => alert("message Sent Successfully")
   )
 }
+
+
+//********** projects-section **********
+const menu = [
+  {
+    id: 1,
+    title: "Multipage-Restaurant-Website",
+    img: "https://i.postimg.cc/YCZJsfKN/Jiko-rest.png",
+    href: "https://jiko-restaurant.netlify.app/index.html",
+  },
+  {
+    id: 2,
+    title: "React_Resume_Builder",
+    img: "https://i.postimg.cc/3xSfL6fb/resumeeeeee.png",
+    href: "https://nurumbithe.github.io/FCC_Markdown_Previewer/",
+  },
+  {
+    id: 3,
+    title: "E-Commerce Website",
+    img: "https://i.postimg.cc/Kv62w2X9/PLP.png",
+    href: "https://codepen.io/NuruMbithe/pen/WNMwrMm",
+  },
+  {
+    id: 4,
+    title: "Drinks API",
+    img: "https://i.postimg.cc/VNhYG9nw/API-1.png",
+    href: "https://nurumbithe.github.io/Drinks_API/",
+  },
+];
+
+const sectionCenter = document.querySelector('.projects-grid');
+
+
+//load items
+window.addEventListener('DOMContentLoaded', function() {
+  displayMenuItems (menu);
+  const categories= menu.reduce(function(values,item) {
+    if(!values.includes(item.category)) {
+      values.push(item.category);
+    }
+return values
+  }, ['all']
+  );
+  
+   });
+
+
+
+function displayMenuItems(menuItems){
+  let displayMenu = menuItems.map(function (item){
+    return  ` <a href=${item.link} target="_blank"id="project" class="project project-title">
+    <img src=${item.img}alt=${item.title}class="project-image" >
+    <p class="project-title">
+        <span class="code">&lt;</span>
+        ${item.title}
+        <span class="code">&#47;&gt;</span>
+    </p>`
+  });
+  displayMenu = displayMenu.join("")
+  sectionCenter.innerHTML = displayMenu;
+}
+
+
+
