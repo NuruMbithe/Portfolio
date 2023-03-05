@@ -29,19 +29,25 @@ const menu = [
     img: "https://i.postimg.cc/4NfV0RBQ/RQG.png",
     href: "https://nurumbithe.github.io/FCC_Random_Quote_Machine/",
   },
+  {
+    id: 7,
+    title: "To-Do App",
+    img: "https://i.postimg.cc/NMVgcDSh/To-Do-app.png",
+    href: "https://nurumbithe.github.io/To-Do-List/",
+  },
+  {
+    id: 12,
+    title: "Javascript Calculator",
+    img: "https://i.postimg.cc/NMPqQf3D/CALC.png",
+    href: "https://nurumbithe.github.io/FCC_Javascript_Calculator/",
+  },
    {
       id: 6,
       title: "Restaurant-Menu-Page",
       img: "https://i.postimg.cc/Y2fXT0WR/Jiko-Menu.png",
       href: "https://nurumbithe.github.io/Jiko-Menu/",
     },
-   
-      {
-        id: 7,
-        title: "To-Do App",
-        img: "https://i.postimg.cc/NMVgcDSh/To-Do-app.png",
-        href: "https://nurumbithe.github.io/To-Do-List/",
-      },
+      
       {
         id: 8,
         title: "Affirmation Generator",
@@ -66,14 +72,6 @@ const menu = [
         img: "https://i.postimg.cc/dVNtLQCf/wangari-maathai.png",
         href: "https://codepen.io/NuruMbithe/pen/JjrZVry",
       },
-      {
-        id: 12,
-        title: "Cocktail API",
-        img: "https://i.postimg.cc/4NzTLVv3/Portfolio-Website.png",
-        href: "https://codepen.io/NuruMbithe/pen/XWewOQo",
-      },
-  
- 
   ];
   
   const sectionCenter = document.querySelector('.projects-grid');
