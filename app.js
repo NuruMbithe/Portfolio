@@ -133,8 +133,8 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector('.projects-grid');
-
-
+  
+  
 //load items
 window.addEventListener('DOMContentLoaded', function() {
   displayMenuItems (menu);
@@ -152,7 +152,7 @@ return values
 
 function displayMenuItems(menuItems){
   let displayMenu = menuItems.map(function (item){
-    return  ` <a href=${item.link} target="_blank"id="project" class="project project-title">
+    return  ` <a href=${item.href} target="_blank"id="project" class="project project-title">
     <img src=${item.img}alt=${item.title}class="project-image" >
     <p class="project-title">
         <span class="code">&lt;</span>
@@ -163,6 +163,4 @@ function displayMenuItems(menuItems){
   displayMenu = displayMenu.join("")
   sectionCenter.innerHTML = displayMenu;
 }
-
-
 
