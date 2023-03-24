@@ -14,8 +14,8 @@ const menu = [
   {
     id: 3,
     title: "E-Commerce Website",
-    img: "https://i.postimg.cc/Kv62w2X9/PLP.png",
-    href: "https://codepen.io/NuruMbithe/pen/WNMwrMm",
+    img: "https://i.postimg.cc/TY434qhv/WT-1.png",
+    href: "https://nurumbithe.github.io/Thrift-Store/",
   },
   {
     id: 4,
